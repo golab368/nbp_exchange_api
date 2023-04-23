@@ -1,0 +1,9 @@
+{% extends "web/base.html" %} {% block body %}
+
+<h1>Major Difference</h1>
+<p>
+  The major difference between the buy and ask rate for {{ currency_code }} over
+  the last {{ n }} quotations is: {{ major_difference }}
+</p>
+
+{% endblock %}

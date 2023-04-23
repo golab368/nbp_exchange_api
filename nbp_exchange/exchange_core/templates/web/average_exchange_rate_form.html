@@ -1,0 +1,18 @@
+{% extends "web/base.html" %} {% block body %}
+<div class="card" style="width: 35rem">
+  <div class="card-header">
+    <h4>Average Exchange Rate</h4>
+  </div>
+  <div class="card-body">
+    <form method="post">
+      {% csrf_token %} {{ form.as_p }}
+      <input
+        class="btn btn-primary"
+        type="submit"
+        value="Get Average Exchange Rate"
+      />
+    </form>
+  </div>
+</div>
+
+{% endblock %}
